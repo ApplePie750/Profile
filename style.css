@@ -1,0 +1,239 @@
+body {
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F9FA; 
+  color: #212529; 
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0px 20px;
+  background: #007BFF;
+  color: #FFFFFF;
+}
+
+.logo {
+  height: 100px;
+}
+
+.account-logo {
+  height: 50px;
+}
+
+.nav-links-container, .search-bar {
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav-links a, .account-btn {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links a:hover, .account-btn:hover {
+  color: #F8F9FA;
+  background-color: #0056b3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+
+
+.search-bar {
+  margin-left: auto;
+}
+
+.search-bar form {
+  display: flex;
+}
+
+.search-bar input[type="text"], .search-bar button {
+  padding: 5px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: #0000002b;
+}
+
+.banner {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #FFFFFF;
+}
+
+.banner h1, .banner h2 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.banner-btn {
+  text-decoration: none;
+  color: #007BFF;
+  background: #FFFFFF;
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.banner-btn:hover { 
+  background-color: #0056b3; color: #FFFFFF; }
+
+.card-section { 
+  display: flex; 
+  justify-content: space-around; 
+  padding: 50px; 
+  background: #F8F9FA; 
+}
+
+.card {  
+  text-align: center; 
+  padding: 20px; 
+  background: #FFFFFF; 
+  color: #212529; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  margin: 10px; 
+}
+
+.card:hover { transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+.card img { width: 100%; 
+  height: auto; 
+  border-bottom: 5px solid #007BFF; 
+}
+
+.card h3, .card p, .card-btn { 
+  color: #212529; 
+}
+
+.card-btn { text-decoration: none; 
+  color: #007BFF; 
+  background-color: 49, 54, 63; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  display: inline-block; 
+  margin-top: 15px; 
+}
+
+.card-btn:hover { 
+  background-color: #0056b3; 
+}
+
+.info-blog {
+  background-color: #909090;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-family: 'Overpass', sans-serif;
+}
+
+.info-blog-content {
+  max-width: 800px;
+  text-align: center; 
+  width: 100%;
+}
+
+.info-blog h2 {
+  color: #0051a8;
+  margin: 15px 0;
+}
+
+/* Mon-compte.html */
+
+.user-profile {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 50px;
+  background: #17A2B8; 
+  color: #FFFFFF;
+  flex-direction: column; 
+}
+
+.love-coding {
+  background-image: url('images/love-coding.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #000000;
+}
+
+.love-coding h1, .love-coding h2 {
+  text-shadow: 2px 2px 8px #007bff64;
+}
+.user-profile .profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.user-info h3, .user-info h4, .user-info p {
+  color: #FFFFFF;
+  margin: 5px 0;
+}
+
+/* Fin page Mon-compte.html */
+
+footer {
+  background: #007BFF;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links li, .search-bar form {
+    padding: 10px 0;
+  }
+}
